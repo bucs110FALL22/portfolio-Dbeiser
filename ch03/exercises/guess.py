@@ -1,5 +1,5 @@
 import random
-answer = random.choice(range(1,11))
+answer = random.ranrange(1,11)
 print(answer)
 guess = input("pick a number from 1-10: ")
 guess_counter = 2
