@@ -14,4 +14,4 @@ Preferred Name: Dani Beiser
 
 Discord username: dshark#1315
 
-REPL url: https://replit.com/@DanielBeiser?path=multiplayer
+REPL url: https://replit.com/join/colwnnpdqi-danielbeiser
