@@ -1,7 +1,7 @@
 import turtle #1. import modules
 import random
-import pygame
-import math
+# import pygame
+# import math
 
 #Part A
 window = turtle.Screen() # 2.  Create a screen
@@ -21,6 +21,8 @@ leonardo.goto(-100,-20)
 
 ## 5. Your PART A code goes here
 #first part of A
+michelangelo.down()
+leonardo.down()
 mrandom = random.randrange(1,100)
 lrandom = random.randrange(1,100)
 michelangelo.down()
@@ -46,8 +48,12 @@ michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 michelangelo.down()
 leonardo.down()
+
+
+window.exitonclick()
+
 # PART B - complete part B here
 pygame.init()
 window = pygame.display.set_mode()
 
-window.exitonclick()
+
