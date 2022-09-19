@@ -1,7 +1,7 @@
 import turtle #1. import modules
 import random
-# import pygame
-# import math
+import pygame
+import math
 
 #Part A
 window = turtle.Screen() # 2.  Create a screen
