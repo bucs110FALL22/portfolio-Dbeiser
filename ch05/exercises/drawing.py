@@ -1,5 +1,7 @@
 import turtle
 window = turtle.Screen()
+numsides = int(input("how many sides: "))
+side_length = int(input("how long the sides: "))
 def draweqshape (numsides,side_length):
   t = turtle.Turtle()
   t.color("green")
@@ -8,4 +10,4 @@ def draweqshape (numsides,side_length):
     t.fd(side_length)
     t.rt(angle)
   window.exitonclick()
-draweqshape(8,50)
+draweqshape(numsides,side_length)
