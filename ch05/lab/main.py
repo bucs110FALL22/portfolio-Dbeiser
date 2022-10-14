@@ -33,7 +33,6 @@ for i in range(2,UPPER_LIMIT + 1):
       count += 1
   coords = list(iters.items())
   display.fill((0,100,0))
-  print(iters)
   pygame.draw.lines(display,BLACK, False,coords)
   new_display = pygame.transform.flip(display, False, True)
   display.blit(new_display , (0, 0))
