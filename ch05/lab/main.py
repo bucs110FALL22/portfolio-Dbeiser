@@ -4,6 +4,7 @@ display = pygame.display.set_mode((250,250))
 display.fill((0,100,0))
 SCALE = 5
 max_so_far = 0
+max_val = 0
 n = 2
 UPPER_LIMIT = 20
 iters = {}
@@ -19,6 +20,7 @@ for i in range(2,UPPER_LIMIT + 1):
       iters[start_number * SCALE] = count * SCALE
       if count > max_so_far:
         max_so_far = count
+        max_val = start_number
       break
     elif n % 2 == 0:
       n = n/2
