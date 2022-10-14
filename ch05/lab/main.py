@@ -7,7 +7,8 @@ max_so_far = 0
 max_val = 0
 n = 2
 UPPER_LIMIT = 20
-iters = {}
+iters = {0:0}
+max_print= {max_val:max_so_far}
 start_cord = (0,0)
 BLACK = (0,0,0)
 font = pygame.font.Font(None,50)
@@ -21,6 +22,8 @@ for i in range(2,UPPER_LIMIT + 1):
       if count > max_so_far:
         max_so_far = count
         max_val = start_number
+        max_print.clear()
+        max_print[max_val] = max_so_far
       break
     elif n % 2 == 0:
       n = n/2
@@ -28,11 +31,13 @@ for i in range(2,UPPER_LIMIT + 1):
     else:
       n = (n * 3) + 1
       count += 1
-
-coords = list(iters.items())
-pygame.draw.lines(display,BLACK, False,coords)
-new_display = pygame.transform.flip(display, False, True)
-display.blit(new_display , (0, 0))
-msg = font.render(str(max_so_far), True, BLACK)
-display.blit(msg, (10,10))
-pygame.display.update()
+  coords = list(iters.items())
+  display.fill((0,100,0))
+  print(iters)
+  pygame.draw.lines(display,BLACK, False,coords)
+  new_display = pygame.transform.flip(display, False, True)
+  display.blit(new_display , (0, 0))
+  msg = font.render(str(max_print), True, BLACK)
+  display.blit(msg, (10,10))
+  pygame.display.update()
+  pygame.time.wait(500)
